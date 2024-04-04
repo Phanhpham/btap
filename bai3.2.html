@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function tinhChuVi(r) {
+        return 2 * Math.PI * r;
+    }
+    function tinhDienTich(r) {
+        return Math.PI * r * r;
+    }
+
+
+    let banKinh = parseFloat(prompt("nhập ban kinh hinh tron:"));
+    if (banKinh > 0) {
+        let chuVi = tinhChuVi(banKinh);
+        let dienTich = tinhDienTich(banKinh);
+        console.log("Chu vi của hình tròn là: " + chuVi);
+        console.log("Diện tích của hình tròn là: " + dienTich);
+    } else {
+        console.log("Bán kính không hợp lệ. Vui lòng nhập lại.");
+
+    }
+
+</script>
+
+</html>
